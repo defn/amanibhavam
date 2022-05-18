@@ -1,14 +1,8 @@
 VERSION 0.6
 
-build:
-    FROM registry.fly.io/defn:dev-tower
-    COPY hello.go .
-    RUN ~/bin/e go build hello.go
-    SAVE ARTIFACT hello
+IMPORT ../lib AS lib
 
-image:
-    FROM scratch
-    COPY +build/hello /
-    ENTRYPOINT ["/hello"]
-    SAVE ARTIFACT /hello AS LOCAL hello
-    SAVE IMAGE hello
+FROM lib+platform
+
+update:
+    DO lib+POETRY_UPDATE
