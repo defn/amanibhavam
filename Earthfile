@@ -8,11 +8,6 @@ warm:
     COPY pyproject.toml poetry.lock .
     RUN ~/bin/e poetry install
 
-update:
-    FROM +warm
-    RUN ~/bin/e poetry update
-    SAVE ARTIFACT poetry.lock AS LOCAL poetry.lock
-
 build:
     FROM +warm
     COPY src src
