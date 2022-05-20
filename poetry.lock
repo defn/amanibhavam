@@ -39,7 +39,7 @@ publication = ">=0.0.3"
 
 [[package]]
 name = "cdktf-cdktf-provider-aws"
-version = "7.0.58"
+version = "7.0.59"
 description = "Prebuilt aws Provider for Terraform CDK (cdktf)"
 category = "main"
 optional = false
@@ -55,6 +55,20 @@ publication = ">=0.0.3"
 name = "cdktf-cdktf-provider-digitalocean"
 version = "0.0.40"
 description = "Prebuilt digitalocean Provider for Terraform CDK (cdktf)"
+category = "main"
+optional = false
+python-versions = "~=3.7"
+
+[package.dependencies]
+cdktf = ">=0.10.3,<0.11.0"
+constructs = ">=10.0.0,<11.0.0"
+jsii = ">=1.59.0,<2.0.0"
+publication = ">=0.0.3"
+
+[[package]]
+name = "cdktf-cdktf-provider-github"
+version = "0.7.62"
+description = "Prebuilt github Provider for Terraform CDK (cdktf)"
 category = "main"
 optional = false
 python-versions = "~=3.7"
@@ -107,6 +121,17 @@ publication = ">=0.0.3"
 
 [[package]]
 name = "defn-cdktf-provider-buildkite"
+version = "0.4.0"
+description = ""
+category = "main"
+optional = false
+python-versions = ">=3.8,<4.0"
+
+[package.dependencies]
+cdktf = ">=0.10.4,<0.11.0"
+
+[[package]]
+name = "defn-cdktf-provider-cloudflare"
 version = "0.4.0"
 description = ""
 category = "main"
@@ -179,7 +204,7 @@ python-versions = ">=3.7"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "ed51725a7948d01d6fa58e28946b282fcce260a18a3a0e6443bf2dc4c086fdcd"
+content-hash = "ec0c20637cfee442e98fe60b9b5646b7b075500dc9fa20f52baf128b218ac64e"
 
 [metadata.files]
 attrs = [
@@ -195,12 +220,16 @@ cdktf = [
     {file = "cdktf-0.10.4.tar.gz", hash = "sha256:044eeececeac0cc4682275e54b6056a514480e0769e4dddad885102b3114f4eb"},
 ]
 cdktf-cdktf-provider-aws = [
-    {file = "cdktf-cdktf-provider-aws-7.0.58.tar.gz", hash = "sha256:9db50b3f1417901aec9a1b6f37eb7bde3760d0286b7c9274ec2b9c9f6db2e760"},
-    {file = "cdktf_cdktf_provider_aws-7.0.58-py3-none-any.whl", hash = "sha256:aa84d4278b83c2b5c7cc7c68141d792475ea4513d767cf23b610a113aac3f971"},
+    {file = "cdktf-cdktf-provider-aws-7.0.59.tar.gz", hash = "sha256:be80eb9e093edb6d89b4ab160307cdfa4104176f7940daa3b46ebb9654753291"},
+    {file = "cdktf_cdktf_provider_aws-7.0.59-py3-none-any.whl", hash = "sha256:f11a4700032d3b24503464632213f7b01ea6404d1f3648e845e4a34db4f2280a"},
 ]
 cdktf-cdktf-provider-digitalocean = [
     {file = "cdktf-cdktf-provider-digitalocean-0.0.40.tar.gz", hash = "sha256:3ae689bd21abfec23a05318b5c4b2b3b98daa3bf508b1eaeef6278cda0494f00"},
     {file = "cdktf_cdktf_provider_digitalocean-0.0.40-py3-none-any.whl", hash = "sha256:f1b902d2f0229fb634c8fd300338160ab8f82eb80ffd3420468c2cc94ec26374"},
+]
+cdktf-cdktf-provider-github = [
+    {file = "cdktf-cdktf-provider-github-0.7.62.tar.gz", hash = "sha256:873ff39005f8d23666993857f06659bdebdb6ab75458b9f8f22a31f73a0755a3"},
+    {file = "cdktf_cdktf_provider_github-0.7.62-py3-none-any.whl", hash = "sha256:e1d8084973354692ddc091bd6ac7cca24ccd4864f6941aeda2f7d8f2a5a4b7da"},
 ]
 cdktf-cdktf-provider-null = [
     {file = "cdktf-cdktf-provider-null-0.6.59.tar.gz", hash = "sha256:0528458435cd4440996a7a5bf72771e11ab0d42c8f8f124fe38de804ad499f12"},
@@ -217,6 +246,10 @@ constructs = [
 defn-cdktf-provider-buildkite = [
     {file = "defn-cdktf-provider-buildkite-0.4.0.tar.gz", hash = "sha256:3e834cae21f12fbc6f6ef73ba6757a4a37708e94f10cbb47d04c24261d270fe6"},
     {file = "defn_cdktf_provider_buildkite-0.4.0-py3-none-any.whl", hash = "sha256:0085b7eb68b8ccf6d8a13b47ff9258bd3d36c24fb0ad7dfe9765557646a24ca2"},
+]
+defn-cdktf-provider-cloudflare = [
+    {file = "defn-cdktf-provider-cloudflare-0.4.0.tar.gz", hash = "sha256:fc59f8ac6549ae4e7368d7e56bfbae7d26e5885a004f9fa7d4997eb6db97450e"},
+    {file = "defn_cdktf_provider_cloudflare-0.4.0-py3-none-any.whl", hash = "sha256:005ab315587486477596463af1590ac5607649bd9ae3ee3b71b0fe7e76b25778"},
 ]
 exceptiongroup = [
     {file = "exceptiongroup-1.0.0rc6-py3-none-any.whl", hash = "sha256:1ce181e67ce038f3a187f003df3e744d653c8e5bae1387e405003cac2c7d0c97"},
