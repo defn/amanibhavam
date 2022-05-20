@@ -67,7 +67,7 @@ publication = ">=0.0.3"
 
 [[package]]
 name = "cdktf-cdktf-provider-null"
-version = "0.6.58"
+version = "0.6.59"
 description = "Prebuilt null Provider for Terraform CDK (cdktf)"
 category = "main"
 optional = false
@@ -80,8 +80,22 @@ jsii = ">=1.59.0,<2.0.0"
 publication = ">=0.0.3"
 
 [[package]]
+name = "cdktf-cdktf-provider-tfe"
+version = "0.2.58"
+description = "Prebuilt tfe Provider for Terraform CDK (cdktf)"
+category = "main"
+optional = false
+python-versions = "~=3.7"
+
+[package.dependencies]
+cdktf = ">=0.10.3,<0.11.0"
+constructs = ">=10.0.0,<11.0.0"
+jsii = ">=1.59.0,<2.0.0"
+publication = ">=0.0.3"
+
+[[package]]
 name = "constructs"
-version = "10.1.11"
+version = "10.1.12"
 description = "A programming model for software-defined state"
 category = "main"
 optional = false
@@ -165,7 +179,7 @@ python-versions = ">=3.7"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "a80c82c992d8308f5536bbc7b3ea22d86878b03bca8c98ec2c07488cf91b9023"
+content-hash = "ed51725a7948d01d6fa58e28946b282fcce260a18a3a0e6443bf2dc4c086fdcd"
 
 [metadata.files]
 attrs = [
@@ -189,12 +203,16 @@ cdktf-cdktf-provider-digitalocean = [
     {file = "cdktf_cdktf_provider_digitalocean-0.0.40-py3-none-any.whl", hash = "sha256:f1b902d2f0229fb634c8fd300338160ab8f82eb80ffd3420468c2cc94ec26374"},
 ]
 cdktf-cdktf-provider-null = [
-    {file = "cdktf-cdktf-provider-null-0.6.58.tar.gz", hash = "sha256:99688c3dfd4a577ebb9c2e7fd1aa64293be1154fb26bbd0d8a91d12c7a1f3364"},
-    {file = "cdktf_cdktf_provider_null-0.6.58-py3-none-any.whl", hash = "sha256:314c3726a31090556c2be91f2d67f1eed7622d626caed2505b6a8f74b928eb2a"},
+    {file = "cdktf-cdktf-provider-null-0.6.59.tar.gz", hash = "sha256:0528458435cd4440996a7a5bf72771e11ab0d42c8f8f124fe38de804ad499f12"},
+    {file = "cdktf_cdktf_provider_null-0.6.59-py3-none-any.whl", hash = "sha256:28b110edf224e034a85dac180e374811a853f82fc4f3a99cd8d518f739553efa"},
+]
+cdktf-cdktf-provider-tfe = [
+    {file = "cdktf-cdktf-provider-tfe-0.2.58.tar.gz", hash = "sha256:4b7cc5436f3317c220b8ed4f1130ec2adaac0be2fcb94b0e156a9eaa7a5147b4"},
+    {file = "cdktf_cdktf_provider_tfe-0.2.58-py3-none-any.whl", hash = "sha256:cf77a5a528471efd7005c8b5f6fbc990474e1abeac85b9d506c989866c28efb6"},
 ]
 constructs = [
-    {file = "constructs-10.1.11-py3-none-any.whl", hash = "sha256:0d6c79bb5d32c593aa784e06fec47d4760daf92a77f97d41ba45b26a32cac03c"},
-    {file = "constructs-10.1.11.tar.gz", hash = "sha256:ca4e6ec13202356510c593479dbfd6814d5d83d204108715332551d633aae8f3"},
+    {file = "constructs-10.1.12-py3-none-any.whl", hash = "sha256:0a52df35978ee9a8d13873c7acfb96f27948678587500eb141c0b00557a42e92"},
+    {file = "constructs-10.1.12.tar.gz", hash = "sha256:e34724050ad35adda280a0f0119374321722e980b5871309d0ed57bb27fbc92f"},
 ]
 defn-cdktf-provider-buildkite = [
     {file = "defn-cdktf-provider-buildkite-0.4.0.tar.gz", hash = "sha256:3e834cae21f12fbc6f6ef73ba6757a4a37708e94f10cbb47d04c24261d270fe6"},
