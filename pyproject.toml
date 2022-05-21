@@ -2,7 +2,7 @@
 name = "amanibhavam"
 description = ""
 authors = ["Amanibhavam <iam@defn.sh>"]
-version = "0.1.17"
+version = "0.1.18"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
@@ -20,6 +20,7 @@ defn-cdktf-provider-cloudflare = "^0.4.0"
 defn-cdktf-provider-buildkite = "^0.4.0"
 defn-cdktf-provider-vault= "^0.4.0"
 defn-cdktf-provider-boundary= "^0.4.0"
+cdktf-cdktf-provider-kubernetes = "^0.7.63"
 
 [tool.poetry.scripts]
 amanibhavam = "config:main"
